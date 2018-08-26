@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="个人网站">
+	<meta name="author" content="CHD">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <title>主页</title>
+	<link rel="stylesheet" href="css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>	
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+ 
+<body>
+
+<div class="top">
+	<div class="top_left">
+	<h1 id="title"><i>CHD Edu</i></h1>
+	</div>
+</div>
+
+<div class="bottom">
+	<div id="login_frame">
+		<form method="post" action="login.js">
+			<div class="login">
+				<p><input type="text" id="username" class="text_field" placeholder="用户名"/></p>
+				<p><input type="password" id="password" class="text_field" placeholder="密码"/></p>
+			</div>
+			
+			<div id="login_control">
+				<input type="button" id="btn_login" class="login_signup" value="登录" onclick="login();"/>
+				<input type="button" id="sign_up" class="login_signup" value="注册" onclick="signup();"/>
+				</br>
+				<a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>
+			</div>
+		</form>
+	</div>
+</div>
+ 
+</body>
+</html>
