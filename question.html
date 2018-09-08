@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="题库">
+	<meta name="author" content="CHD">
+    <title>题库</title>
+	<!--link rel="stylesheet" href="css/cssReset.css"/!-->
+	<link rel="stylesheet" href="css/cssReset.css"/>	
+	<link rel="stylesheet" href="css/database.css"/>	
+	<script type="text/javascript" src="js/database.js"></script>
+</head>
+ 
+<body>
+
+<h1>题目</h1>
+<hr/>
+<div class="QandA">
+	<div class="Que">
+		<b>问题：</b> <span id="question" class="questions"></span><br/>
+		<hr/>
+		<ol type="A" class="options">
+		 <li><span id="A"></span></li>
+		 <li><span id="B"></span></li>
+		 <li><span id="C"></span></li>
+		 <li><span id="D"></span></li>
+		</ol> 
+	</div>
+	<div class="Ans">
+		<input type="button" onclick="show_answer('answer')" class="show_ans" value="答案：" /> 
+		<span id="answer" style="display:none" class="answers"></span><br />
+	</div>
+</div>
+<script type="text/javascript">
+	xmlDoc=loadXmlFile("database/qs.xml")
+    document.getElementById("question").innerHTML=xmlDoc.getElementsByTagName("question")[0].childNodes[0].nodeValue;
+	document.getElementById("A").innerHTML=xmlDoc.getElementsByTagName("optionA")[0].childNodes[0].nodeValue;
+	document.getElementById("B").innerHTML=xmlDoc.getElementsByTagName("optionB")[0].childNodes[0].nodeValue;
+	document.getElementById("C").innerHTML=xmlDoc.getElementsByTagName("optionC")[0].childNodes[0].nodeValue;
+	document.getElementById("D").innerHTML=xmlDoc.getElementsByTagName("optionD")[0].childNodes[0].nodeValue;
+	document.getElementById("answer").innerHTML=xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue; </script>
+</body>
+</html>
