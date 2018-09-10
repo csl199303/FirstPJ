@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<choice_q>
+	<num>1</num>
+	<question>(1+2i)/(1-2i)=?</question>
+	<subject>math</subject>
+	<region>ShaanXi</region>
+	<year>2018</year>
+	<optionA>-4/5-3i/5</optionA>
+	<optionB>-4/5+3i/5</optionB>
+	<optionC>-3/5-4i/5</optionC>
+	<optionD>-3/5-4i/5</optionD>
+	<answer>D</answer>
+</choice_q> 
