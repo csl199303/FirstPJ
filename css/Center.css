@@ -1,35 +1,63 @@
-body {
-    background-color: blue;
-}
-.header{
-    font-size: 100px;
-	font-family:黑体;
-    color: blank;
-    text-decoration: none;
-    position: relative;
-    float: left;
-	margin-left: 61px;
-    top: 10px;
-}
-ul
+@charset "utf-8";
+body
 {
-list-style-type:none;
-margin:0;
-padding:0;
+background: none repeat scroll 0 0 #f7f7f7; 
+color: #333333; 
+line-height: 1.2;
+font: 12px/1.5 "微软雅黑", Helvetica, Arial, sans-serif; 
+letter-spacing: normal; 
+}
+h1
+{
+font-family:等线;
+font-size:40px;
+color:#363636;
+}
+hr
+{
+width:84%;
+margin:0 auto;
+border: 0;
+height: 1px;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));	
 }
 a:link,a:visited
 {
+font-size: 20px;
 display:block;
 font-weight:bold;
 color:#FFFFFF;
 background-color:#bebebe;
-width:120px;
+width:150px;
 text-align:center;
-padding:4px;
+padding:5px;
 text-decoration:none;
 text-transform:uppercase;
 }
 a:hover,a:active
 {
 background-color:#cc0000;
+}
+
+.top
+{
+width:80%;
+margin:0 auto;
+text-align:left;
+}
+.top_left
+{
+margin:20px;
+text-align:left;
+}
+.content .catalog
+{
+width:10%;
+float:left;
+display:inline;
+}
+.content
+{
+width:80%;
+overfolw:hidden;	
 }
