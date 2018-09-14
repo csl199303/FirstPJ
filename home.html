@@ -6,7 +6,8 @@
 	<meta name="description" content="个人网站">
 	<meta name="author" content="CHD">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
-    <title>主页</title>
+    <title>CHD edu</title>
+    <link rel="short icon"  href="images/edu.png"></link>
 	<link rel="stylesheet" href="css/cssReset.css"/>
     <link rel="stylesheet" type="text/css" href="css/login.css"/>	
     <script type="text/javascript" src="js/login.js"></script>
@@ -19,13 +20,14 @@
 </div>
 
 <div id="login_frame">
-	<form method="post" action="login.js">
-		<p><input type="text" id="username" class="text_field" placeholder="用户名"/></p>
-		<p><input type="password" id="password" class="text_field" placeholder="密码"/></p>		
-		<input type="button" id="btn_login" class="login_signup" value="登录" onclick="login();"/>
+	<form method="post" action="home/login.php" onsubmit="return enter()">
+		<input type="text" id="username" name="username" class="text_field" placeholder="用户名"/>
+		</br>
+		<input type="password" id="password" name="password" class="text_field" placeholder="密码"/>		
+		<input type="submit" id="btn_login" class="login_signup" value="登录" />
 		<input type="button" id="sign_up" class="login_signup" value="注册" onclick="signup();"/>
 		</br>
-		<a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>
+		<a id="forget_pwd" href="home/forget_pwd.html">忘记密码？</a>
 	</form>
 </div>
 
